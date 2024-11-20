@@ -17,7 +17,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color: #d3d3d3;
 }
 
 nav a {
@@ -43,4 +43,43 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+footer {
+  background-color: #d3d3d3;
+}
+
+.valueprop {
+  background-color: white;
+}
+
+.promo_outer_container {
+  display: flex;
+  background-color: #001f3f;
+  color: white;
+}
+
+.promo {
+  text-align: center;
+}
+
+#promo1, #promo2 {
+  border-right: 2px solid white;
+}
+
+h1 {
+  color: #001f3f;
+}
+
+#test {
+  text-align: center;
+}
+
+.vp_outer_container {
+  background-color: #634399;
+  border: solid red;
+}
+
+.valueprop_container {
+  display: flex;
 }
