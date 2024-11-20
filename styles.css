@@ -48,6 +48,8 @@ h1 {
 footer {
   background-color: #d3d3d3;
   border: solid blue;
+  display: flex;
+  width: 100%;
 }
 
 .valueprop {
@@ -106,10 +108,15 @@ h1 {
 
 .newsletter_container {
   border: solid red;
+  width: 75%;
 }
 
 .social_links_container {
   border: solid orange;
+  width: 25%;
+  display: flex;
+  justify-content: right;
+  padding: 10px;
 }
 
 .links_container {
@@ -120,6 +127,10 @@ h1 {
   padding: 10px;
 }
 
+.social_media {
+  margin: 5px;
+}
+
 .footer_links {
-  padding-right: 15px;
+  padding-right: 25px;
 }
