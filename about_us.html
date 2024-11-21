@@ -33,27 +33,28 @@
         <div class='business_info' id='sunday_hours'>Closed</div>
       </div>
       <hr>
-      <h1>Contact Us</h1>
+      <h1 id="dba">Contact Us</h1>
       <form>
-        <h3>Name:</h3>
-        <input type="full name" placeholder="Your Name" required>
-        <h3>Email Address:</h3>
+        <h4>Name:</h4>
+        <input class="box" type="full name" placeholder="Your Name" required>
+        <h4>Email Address:</h4>
         <input type="email" placeholder="Your Email" required>
-        <h3>Phone Number:</h3>
-        <input type="phone number" placeholder="Your Phone Number (Optional)" required>
-        <h3>Feedback/Order Information:</h3>
-        <input type="feedback" placeholder="Your Feedback/Custom Order Information" required>
+        <h4>Phone Number:</h4>
+        <input class="box" type="phone number" placeholder="Your Phone Number (Optional)" required>
+        <h4>Feedback/Order Information:</h4>
+        <input class="box" type="feedback" placeholder="Your Feedback/Custom Order Information" required>
       </form>
-      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-      <h3>Custom Order</h3>
-      <button id='about_us_submit'>Submit</button>
-      <button id='about_us_clear_form'>Clear Form</button>
+          <div class="order_box_container">
+            <input type="checkbox" name="subscribe" value="yes">
+            <h4>Custom Order</h4>
+          </div>  
+            <button id='about_us_submit'>Submit</button>
+            <button id='about_us_clear_form'>Clear Form</button>  
     </main>
     <footer>
       <h5>Sign up for our Newsletter</h5>
         <input type="email" placeholder="Enter your email" required>
         <button type="submit">Submit</button>
-    </form>
     <div class='social_links_container'>
       <div class='social_media' id='facebook'>FB</div>
       <div class='social_media' id='instagram'>IG</div>

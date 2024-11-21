@@ -9,7 +9,7 @@ body {
   background-color: white;
 }
 
-nav {
+/*nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,23 +18,75 @@ nav {
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
   background-color: #d3d3d3;
+  border: solid blue;
+}
+
+nav img {
+  display: flex;
+  align-items: flex-start;
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
+  display: flex;
+  max-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  /*border: solid 1px #aaa;*/
+  /*text-align: ;
+  text-decoration: none;
+  color: #001f3f;
+  border: solid red;
+}*/
+
+/*nav a {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
   /*border: solid 1px #aaa;*/
-  text-align: center;
+  /*text-align: right;
   text-decoration: none;
   color: #001f3f;
+  border: solid red;
+}*/
+
+nav {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 20px; 
 }
 
-nav a[aria-current='page'] {
+img {
+  flex: 0; 
+}
+
+#dba {
+  flex: 1; 
+  text-align: center; 
+  margin: 0; 
+}
+
+.nav_bar {
+  margin-left: 15px; 
+  text-decoration: none; 
+  color: #001f3f; 
+}
+
+.nav_bar:last-child {
+  margin-right: 0; 
+}
+
+
+/*nav a[aria-current='page'] {
   color: #001f3f;
   background-color: #d4d4d4;
-}
+}*/
 
 main {
   padding: 1rem;
@@ -181,4 +233,56 @@ input[type='email'] {
 
 #gallery_add_to_cart {
   margin-top: 10px;
+}
+
+.business_hours_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.business_info {
+  border: 1px solid #d3d3d3;
+  padding: 5px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+.box {
+  border: 1px solid #d3d3d3;
+  width: 27rem;
+  height: 1.7rem;
+}
+
+.order_box_container {
+  display: flex;
+}
+
+.customer_spotlight_container {
+  display: flex;
+  background-color: #634399;
+  padding: 7px;
+}
+
+.customer_spotlight {
+  text-align: center;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.community_involvement_container {
+  display: flex;
+  padding: 7px;
+}
+
+.community_involvement {
+  color: white;
+  background-color: #001f3f;
+  padding: 7px;
+  border-radius: 5px;
+  margin-right: 8px;
 }
