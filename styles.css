@@ -221,6 +221,7 @@ input[type='email'] {
 .gallery_cards_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   width: 100%;
   margin-top: 10px;
 }
@@ -229,6 +230,7 @@ input[type='email'] {
   text-align: center;
   padding: 7px;
   border: 1px solid #d3d3d3;
+  margin: 0;
 }
 
 #gallery_add_to_cart {
