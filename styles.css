@@ -112,10 +112,12 @@ footer {
   display: flex;
   background-color: #001f3f;
   color: white;
+  width: 100%;
 }
 
 .promo {
   text-align: center;
+  width: 100%;
 }
 
 #promo1, #promo2 {
@@ -138,6 +140,7 @@ h1 {
 .valueprop_container {
   display: flex;
   width: 100%;
+  background-color: #634399;
 }
 
 .valueprop {
@@ -150,6 +153,13 @@ h1 {
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.category_header {
+  background-color: #634399;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .category {
@@ -231,6 +241,11 @@ input[type='email'] {
   padding: 7px;
   border: 1px solid #d3d3d3;
   margin: 0;
+}
+
+.promo_photo_container {
+  display: flex;
+  width: 100%;
 }
 
 #gallery_add_to_cart {
