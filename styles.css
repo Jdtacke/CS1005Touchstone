@@ -96,9 +96,17 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
 
 .valueprop {
   background-color: white;
@@ -150,6 +158,8 @@ h1 {
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }
 
 .category_header {
@@ -296,13 +306,11 @@ input[type="feedback"] {
 }
 
 .bottom_outer_container {
-  background-color: #d3d3d3;
-  border: solid red;
+  background-color: rgb(211, 211, 211, .3);
   margin-top: 25px;
 }
 
 .info_container {
-  border: solid green;
   display: flex;
   width: 100%;
 }
@@ -312,7 +320,6 @@ input[type="feedback"] {
 }
 
 .newsletter_container {
-  border: solid purple;
   width: 75%;
   margin: 10px;
   padding-left: 30px;
@@ -321,7 +328,6 @@ input[type="feedback"] {
 .social_links_container {
   display: flex;
   justify-content: flex-end;
-  border: solid orange;
   width: 25%;
   padding: 10px;
 }
@@ -334,7 +340,6 @@ input[type="feedback"] {
   display: flex;
   justify-content: center;
   padding: 10px;
-  border: solid blue;
 }
 
 .footer_links {
