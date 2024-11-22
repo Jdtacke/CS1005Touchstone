@@ -164,6 +164,7 @@ h1 {
   padding: 10px;
   margin: 2px;
 }
+
 .email_button {
   margin: -25px;
   padding-top: 10px;
@@ -292,4 +293,50 @@ input[type="feedback"] {
   padding: 7px;
   border-radius: 5px;
   margin-right: 8px;
+}
+
+.bottom_outer_container {
+  background-color: #d3d3d3;
+  border: solid red;
+  margin-top: 25px;
+}
+
+.info_container {
+  border: solid green;
+  display: flex;
+  width: 100%;
+}
+
+#news {
+  padding-left: 125px;
+}
+
+.newsletter_container {
+  border: solid purple;
+  width: 75%;
+  margin: 10px;
+  padding-left: 30px;
+}
+
+.social_links_container {
+  display: flex;
+  justify-content: flex-end;
+  border: solid orange;
+  width: 25%;
+  padding: 10px;
+}
+
+.social_media {
+  padding: 5px;
+}
+
+.links_container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: solid blue;
+}
+
+.footer_links {
+  padding-right: 10px;
 }
