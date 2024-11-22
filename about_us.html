@@ -11,10 +11,12 @@
     <nav>
       <img src="ABC_Fitness_Studio_Logo-removebg-preview.png" alt="logo" width="100" height="100">
       <h1>About Us</h1>
+      <div class="top_outer_container">
       <a href="/" aria-current="page" class='nav_bar'>Home</a>
       <a href="/gallery.html" class='nav_bar'>Gallery</a>
       <a href="/about_us.html" class='nav_bar'>About Us</a>
       <a href="/community.html" class='nav_bar'>Community</a>
+      </div>
     </nav>
     <main>
       <h1>About Us</h1>
@@ -43,17 +45,23 @@
         <input type="phone number" placeholder="Your Phone Number (Optional)" required>
         <h3>Feedback/Order Information:</h3>
         <input type="feedback" placeholder="Your Feedback/Custom Order Information" required>
-      </form>
-      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-      <h3>Custom Order</h3>
+      </form>       
+    </main>
+
+    <div class="checkbox_container">
+      <div><input type="checkbox" id="subscribe" name="subscribe" value="yes"></div>
+      <div><h3>Custom Order</h3></div>
+    </div>
+
+    <div class="buttons_container">
       <button id='about_us_submit'>Submit</button>
       <button id='about_us_clear_form'>Clear Form</button>
-    </main>
+    </div>
+
     <footer>
       <h5>Sign up for our Newsletter</h5>
         <input type="email" placeholder="Enter your email" required>
         <button type="submit">Submit</button>
-    </form>
     <div class='social_links_container'>
       <div class='social_media' id='facebook'>FB</div>
       <div class='social_media' id='instagram'>IG</div>

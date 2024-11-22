@@ -174,7 +174,12 @@ button {
   background-color: #001f3f;
   border: none;
   height: 1.7rem;
-  width: 5rem;
+  width: 7rem;
+  border-radius: 5px;
+}
+
+#about_us_clear_form {
+  background-color: #d3d3d3;
 }
 
 input[type='email'] {
@@ -222,14 +227,44 @@ form {
   width: 100%;
 }
 
+form h3 {
+  font-size: medium;
+}
+
+form input {
+  width: 25rem;
+  height: 1.7rem;
+}
+
+input[type="email"] {
+  width: 25rem;
+}
+
+input[type="feedback"] {
+  height: 10rem;
+  padding-bottom: 125px;
+}
+
 .box {
   border: 1px solid #d3d3d3;
   width: 27rem;
   height: 1.7rem;
 }
 
-.order_box_container {
+.checkbox_container {
   display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding-bottom: 10px;
+  padding-left: 13px;
+}
+
+.checkbox_container h3 {
+  margin: 0; 
+}
+
+.buttons_container {
+  padding-left: 13px;
 }
 
 .customer_spotlight_container {
