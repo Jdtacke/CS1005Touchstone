@@ -14,26 +14,20 @@ const subscribeButton = document.getElementById('subscribeButton');
     }
   });
 
+
+// Get all buttons with the class 'gallery_add_to_cart'
+const addToCartButtons = document.querySelectorAll('.gallery_add_to_cart');
   
- // "Add to Cart" button for Group Kickboxing
- const gallery_add_to_cart = document.getElementById('gallery_add_to_cart');
-    gallery_add_to_cart.addEventListener('click', function() {
-        alert('Group Kickboxing has been added to your cart!');
- });
-
-// "Add to Cart" button for Group Pilates
-const addToCartButton = document.getElementById('gallery');
-
-addToCartButton.addEventListener('click', function() {
-  alert('Group Pilates has been added to your cart!');
-});
-
-
-
-
-// "Add to Cart" button for Group Pilates
-const group = document.getElementById('group');
-
-group.addEventListener('click', function() {
-  alert('Group Yoga has been added to your cart!');
+// Loop through each button
+addToCartButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Get the parent .gallery_cards element of the clicked button
+    const parentCard = button.closest('.gallery_cards');
+    
+    // Get the text inside the <h5> tag of the parent card
+    const itemName = parentCard.querySelector('h5').textContent;
+    
+    // Show an alert with the item name
+    alert(itemName + ' has been added to your cart!');
+  });
 });
