@@ -31,3 +31,9 @@ addToCartButton.addEventListener('click', function() {
 
 
 
+// "Add to Cart" button for Group Pilates
+const group = document.getElementById('group');
+
+group.addEventListener('click', function() {
+  alert('Group Yoga has been added to your cart!');
+});
