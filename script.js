@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 */
 
-
 document.addEventListener("DOMContentLoaded", () => {
   // Select form elements
   const submitButton = document.getElementById("about_us_submit");
@@ -64,24 +63,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event listener for submit button
   submitButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Thank you for your message");
+    e.preventDefault();
+
+    // Gather form data
+    const formData = {};
+    formInputs.forEach((input) => {
+      const fieldName = input.getAttribute("placeholder"); // Use placeholder as field identifier
+      formData[fieldName] = input.value; // Store value with field name
+    });
+
+    // Save form data to sessionStorage
+    sessionStorage.setItem("formData", JSON.stringify(formData));
+
+    alert("Thank you for your message!");
   });
 
   // Event listener for clear form button
   clearButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      formInputs.forEach(input => input.value = ""); // Clear all input fields
+    e.preventDefault();
+
+    // Clear all input fields
+    formInputs.forEach((input) => (input.value = ""));
+
+    // Remove form data from sessionStorage
+    sessionStorage.removeItem("formData");
+
+    alert("The form has been cleared.");
   });
 });
-
-// Save data to sessionStorage
-sessionStorage.setItem("username", "Joshua");
-
-// Retrieve data from sessionStorage
-const username = sessionStorage.getItem("username");
-console.log(`Hello, ${username}!`);
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
